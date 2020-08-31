@@ -39,7 +39,7 @@ roslaunch roboclaw_node roboclaw.launch
 ```
 Note: One needs to:
 ```
-sudo usermod -a -G dialout USERx
+sudo usermod -a -G dialout <USER_NAME>
 sudo chmod 666 /dev/ttyACM0
 ```
 ## Parameters
