@@ -37,7 +37,11 @@ catkin_make
 source devel/setup.bash
 roslaunch roboclaw_node roboclaw.launch
 ```
-
+Note: One needs to:
+```
+sudo usermod -a -G dialout USERx
+sudo chmod 666 /dev/ttyACM0
+```
 ## Parameters
 The launch file can be configure at the command line with arguments, by changing the value in the launch file or through the rosparam server.
 
